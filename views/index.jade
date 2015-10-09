@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  main
+    h1= title
+    div.calc
+      div.firstOperand
+        input(type="number", id="firstOperand")
+      div.secondOperand
+        input(type="number", id="secondOperand")
+      div.operands
+        button.plus#add +
+        button.minus#minus -
+        button.multiply#multiply *
+        button.divide#divide /
+        button.equals =
+    div.results
+
+
